@@ -9,7 +9,7 @@ import (
 	"github.com/jackc/pgx/v5"
 )
 
-const connString = "postgres://<username>:<password>!@localhost:5434/postgres?sslmode=disable"
+const connString = "postgres://<username>:<password>@localhost:5434/postgres?sslmode=disable"
 
 type ConnPool struct {
 	conns chan *pgx.Conn
